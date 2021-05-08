@@ -135,10 +135,10 @@
 
 <footer>
   <p>
-    Feel free to use my code for your own projects.
+    Contact me for any suggestions.
   </p>
   <p>
-    Contact me for any suggestions.
+    IgnacioGR.
   </p>
 </footer>
 
