@@ -130,3 +130,16 @@
   </div>
 </section>
 <!-- finish contact section -->
+
+<!-- START FOOTER SECTION -->
+
+<footer>
+  <p>
+    Feel free to use my code for your own projects.
+  </p>
+  <p>
+    Contact me for any suggestions.
+  </p>
+</footer>
+
+<!-- END FOOTER SECTION -->
