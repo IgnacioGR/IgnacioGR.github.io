@@ -166,6 +166,8 @@ img {
 }
 
 #profile{
+  display: block;
+  height: auto;
   width: 200px;
   border-radius: 50%;
 }
