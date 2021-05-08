@@ -1,3 +1,4 @@
+<head>
 <link
   rel="stylesheet"
   href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
@@ -12,6 +13,8 @@
   href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap"
   rel="stylesheet"
 />
+</head>
+  
 
 <!-- start of the nav -->
 <nav id="navbar" class="nav">
