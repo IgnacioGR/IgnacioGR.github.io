@@ -6,6 +6,7 @@
   --main-gray: #212427;
 }
 
+
 /* Base reset */
 * {
   margin: 0;
@@ -153,8 +154,8 @@ img {
   align-items: center;
   width: 100%;
   height: 100vh;
+  background-color: #000;
   background: var(--main-lightblue);
-/*   margin: 40px 0 0 0; */
 }
 
 .welcome-section > p {
@@ -162,12 +163,6 @@ img {
   font-weight: 200;
   font-style: italic;
   color: var(--main-gray);
-  
-}
-
-#profile{
-  width: 200px;
-  border-radius: 50%;
 }
 
 /* Projects section */
@@ -176,7 +171,6 @@ img {
   text-align: center;
   padding: 10rem 2rem;
   background: var(--main-gray);
-  width: 100%;
 }
 
 .projects-section-header {
@@ -196,6 +190,7 @@ img {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   grid-gap: 4rem;
+  width: 100%;
   max-width: 1280px;
   margin: 0 auto;
   margin-bottom: 6rem;
@@ -250,7 +245,7 @@ img {
 }
 
 .btn-show-all:hover {
-  color: #ff7f50;
+  background: var(--main-orange);
 }
 
 .btn-show-all:hover > i {
@@ -274,7 +269,7 @@ img {
   width: 100%;
   height: 80vh;
   padding: 0 2rem;
-  background: var(--main-lightblue);
+  background: var(--main-gray);
 }
 
 .contact-section-header > h2 {
@@ -318,7 +313,7 @@ footer {
   justify-content: space-evenly;
   padding: 2rem;
   background: var(--main-gray);
-  border-top: 4px solid var(--main-red);
+  border-top: 4px solid var(--main-gray);
 }
 
 footer > p {
