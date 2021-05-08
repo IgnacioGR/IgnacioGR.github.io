@@ -312,7 +312,7 @@ footer {
   display: flex;
   justify-content: space-evenly;
   padding: 2rem;
-  background: var(--main-gray);
+  background: var(--main-lightblue);
   border-top: 4px solid var(--main-gray);
 }
 
