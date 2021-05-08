@@ -166,7 +166,7 @@ img {
 }
 
 #profile{
-  width: 10%;
+  width: 200px;
   border-radius: 50%;
 }
 
