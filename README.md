@@ -39,7 +39,7 @@
   <p>Aspiring web developer</p> 
   <img id="profile" src="https://media-exp1.licdn.com/dms/image/C4E03AQFJz-kYFEmb4A/profile-displayphoto-shrink_200_200/0/1613069554665?e=1625702400&v=beta&t=4P6uyInnCUysI5fh-I0TweDCYQjtzQhqlDWXyTSX4es">
 
-<a id="resume" target="_blank" href="media/CV- Ignacio Gil Roca English.pdf">Here is my resume</a>
+<a id="resume" target="_blank" href="media/CV- Ignacio Gil Roca English.pdf"><em>"Here is my resume"</em></a>
 </section>
 
 <!-- welcome section finish -->
