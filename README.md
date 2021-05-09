@@ -116,7 +116,7 @@
   <div class="contact-links">
     <a
       id="profile-link"
-      href="https://github.com/freecodecamp"
+      href="https://github.com/IgnacioGR"
       target="_blank"
       class="btn contact-details"
       ><i class="fab fa-github"></i> GitHub</a
