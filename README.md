@@ -50,18 +50,18 @@
 
   <div class="projects-grid">
     <a
-      href="https://codepen.io/ignaciogr/full/bGqNLYy"
+      href="https://ignaciogr.github.io/google-homepage/"
       target="_blank"
       class="project project-tile"
     >
       <img
         class="project-image"
-        src="https://i.imgur.com/RI0TIT1.png"
+        src="https://i.imgur.com/9fRgRCI.png"
         alt="project"
       />
       <p class="project-title">
         <span class="code">&lt;</span>
-        Tribute Page
+        Google Landing Page
         <span class="code">&#47;&gt;</span>
       </p>
     </a>
