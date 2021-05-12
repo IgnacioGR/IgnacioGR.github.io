@@ -315,3 +315,7 @@ footer i {
     text-align: center;
   }
 }
+
+#resume:hover{
+  color: #f48153;
+}
