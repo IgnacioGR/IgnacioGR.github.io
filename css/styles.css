@@ -155,7 +155,7 @@ a:hover {
 }
 
 .projects-image {
-  height: 40vh;
+  width: 50vw;
   margin: 20px;
   border-radius: 12px;
 }
