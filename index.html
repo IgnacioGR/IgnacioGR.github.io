@@ -1,112 +1,213 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>IgnacioGR</title>
 
-<head>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
-  <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway:700&display=swap" rel="stylesheet" />
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ignacio's Portfolio</title>
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Ubuntu"
+      rel="stylesheet"
+    />
+    <!-- Google Fonts -->
 
-  <!-- favicon -->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="msapplication-TileColor" content="#da532c">
-  <meta name="theme-color" content="#ffffff">
+    <!-- CSS Stylesheets -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- CSS Stylesheets -->
 
-</head>
+    <!-- Font Awesome -->
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"
+    ></script>
+    <!-- Font Awesome -->
 
-<body>
-  <!-- start of the nav -->
-  <nav id="navbar" class="nav">
-    <ul class="nav-list">
-      <li>
-        <a href="#welcome-section">About</a>
-      </li>
-      <li>
-        <a href="#projects">Work</a>
-      </li>
-      <li>
-        <a href="#contact">Contact</a>
-      </li>
-    </ul>
-  </nav>
-  <!-- nav finish -->
+    <!-- Bootstrap Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Bootstrap Scripts -->
+  </head>
 
-  <!-- welcome section -->
-  <section id="welcome-section" class="welcome-section">
-    <h1>Ignacio Gil Roca</h1>
-    <p>Aspiring web developer</p>
-    <img id="profile"
-      src="https://media-exp1.licdn.com/dms/image/C4E03AQFJz-kYFEmb4A/profile-displayphoto-shrink_200_200/0/1613069554665?e=1625702400&v=beta&t=4P6uyInnCUysI5fh-I0TweDCYQjtzQhqlDWXyTSX4es">
+  <body id="body">
+    <header>
+      <section class="colored-section" id="title">
+        <div id="about" class="container-fluid">
+          <!-- Nav Bar -->
+          <nav class="navbar navbar-expand-lg navbar-dark">
+            <a class="navbar-brand" href=""
+              ><img
+                class="title-image"
+                src="https://media-exp1.licdn.com/dms/image/C4E03AQFJz-kYFEmb4A/profile-displayphoto-shrink_200_200/0/1613069554665?e=1625702400&v=beta&t=4P6uyInnCUysI5fh-I0TweDCYQjtzQhqlDWXyTSX4es"
+                alt=""
+                style="width: 13%; margin: -10px 10px 0 0; border-radius: 50%"
+              />IgnacioGR</a
+            >
 
-    <a id="resume" target="_blank" href="media/CV- Ignacio Gil Roca English.pdf"><em>"Here is my resume"</em></a>
-  </section>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarToggler1"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
 
-  <!-- welcome section finish -->
+            <div class="collapse navbar-collapse" id="navbarToggler1">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#cta">Contact</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+          <!-- Nav Bar -->
 
-  <!-- projects section -->
-  <section id="projects" class="projects-section">
-    <h2 class="projects-section-header">These are some of my projects</h2>
+          <!-- Title -->
+          <div class="row">
+            <div class="col-lg-6">
+              <h1 style="margin-top: 15%" class="big-heading">
+                I am a web developer. <br /><br />
+                And I enjoy building websites like this one.
+              </h1>
+              <button type="button" class="btn btn-lg big-button">
+                <a
+                  id="resume"
+                  target="_blank"
+                  href="media/CV- Ignacio Gil Roca English.pdf"
+                  >Here is my resume</a
+                >
+              </button>
+            </div>
 
-    <div class="projects-grid">
-      <a href="https://ignaciogr.github.io/google-homepage/" target="_blank" class="project project-tile">
-        <img class="project-image" src="/media/google-project.png" alt="project" />
-        <p class="project-title">
-          <span class="code">&lt;</span>
-          Google Landing Page
-          <span class="code">&#47;&gt;</span>
-        </p>
-      </a>
-      <a href="https://ignaciogr.github.io/EtchaSketch/" target="_blank" class="project project-tile">
-        <img class="project-image" src="/media/Sketch.PNG" alt="project" />
-        <p class="project-title">
-          <span class="code">&lt;</span>
-          Etch a Sketch
-          <span class="code">&#47;&gt;</span>
-        </p>
-      </a>
-    </div>
-    <a href="https://github.com/IgnacioGR?tab=repositories" class="btn btn-show-all" target="_blank">Show all<i
-        class="fas fa-chevron-right"></i></a>
-  </section>
-  <!-- project section finish -->
+            <div class="col-lg-6">
+              <img
+                class="title-image"
+                src="/media/IgnacioGR.png"
+                alt=""
+                style="width: 600px"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Title -->
+    </header>
+    <main>
+      <!-- Projects-->
+      <section class="white-section" id="projects">
+        <div
+          id="projects-carousel"
+          class="carousel slide"
+          data-interval="false"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active container-fluid">
+              <h2 class="projects-text">
+                <a
+                  href="https://ignaciogr.github.io/EtchaSketch/"
+                  target="_blank"
+                  >Etch a Sketch</a
+                >
+                : Website with the classic game, you can swap between different
+                sizes of grid and colors.
+              </h2>
+              <img class="projects-image" src="/media/sketch.png" alt="" />
+            </div>
+            <div class="carousel-item container-fluid">
+              <h2 class="projects-text">
+                <a
+                  href="https://ignaciogr.github.io/ReactiveWebTemplate/"
+                  target="_blank"
+                  >Reactive web</a
+                >: example of a reactive web for companies, works in computers
+                and phones.
+              </h2>
+              <img class="projects-image" src="/media/company.png " alt="" />
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#projects-carousel"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon"></span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#projects-carousel"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon"></span>
+          </a>
+        </div>
+      </section>
+      <!-- Projects -->
 
-  <!-- contact section -->
-  <section id="contact" class="contact-section">
-    <div class="contact-section-header">
-      <h2>Want to contact me?</h2>
-      <p>Just find me over in one of this</p>
-    </div>
-    <div class="contact-links">
-      <a id="profile-link" href="https://github.com/IgnacioGR" target="_blank" class="btn contact-details"><i
-          class="fab fa-github"></i> GitHub</a>
-      <a href="https://www.instagram.com/ignacio_90sbk/" target="_blank" class="btn contact-details"><i
-          class="fab fa-instagram"></i> Instagram</a>
-      <a href="mailto:ignagilroca@gmail.com" class="btn contact-details"><i class="fas fa-at"></i> Send a mail</a>
-    </div>
-  </section>
-  <!-- finish contact section -->
+      <a href="#body" class="scroll-up">Go to the top</a>
 
-  <!-- START FOOTER SECTION -->
+      <!-- Contact Section -->
+      <section class="colored-section" id="cta">
+        <div class="container-fluid">
+          <h3 class="big-heading">
+            Want to contact me?<br />Just find me over one of these.
+          </h3>
+          <div id="contact-links" class="contact-links">
+            <a
+              id="profile-link"
+              href="https://github.com/IgnacioGR"
+              target="_blank"
+              class="btn contact-details"
+              ><i class="fab fa-github"></i> GitHub</a
+            >
+            <a
+              href="https://www.instagram.com/ignacio_90sbk/"
+              target="_blank"
+              class="btn contact-details"
+              ><i class="fab fa-instagram"></i> Instagram</a
+            >
+            <a href="mailto:ignagilroca@gmail.com" class="btn contact-details"
+              ><i class="fas fa-at"></i> Send a mail</a
+            >
+          </div>
+        </div>
+        <a href="#body" class="scroll-up">Go to the top</a>
+      </section>
+      <!-- Contact Section -->
+    </main>
 
-  <footer>
-    <p>
-      Contact me for any suggestions.
-    </p>
-    <p>
-      IgnacioGR.
-    </p>
-  </footer>
-
-  <!-- END FOOTER SECTION -->
-</body>
-
+    <!-- Footer -->
+    <footer class="white-section" id="footer">
+      <div class="container-fluid">
+        <p>© Copyright 2021 IgnacioGR</p>
+      </div>
+    </footer>
+    <!-- Footer -->
+  </body>
 </html>
