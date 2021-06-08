@@ -1,6 +1,7 @@
 :root {
-  --blue: rgb(81, 155, 130);
-  --darkblue: rgb(55, 99, 84);
+  --primary-color: #760000;
+  --secondary-color: #ff6857;
+  --hover-color: #49281c;
 }
 
 html {
@@ -22,7 +23,7 @@ h6 {
 }
 
 p {
-  color: #8f8f8f;
+  color: var(--primary-color);
 }
 
 /* Headings */
@@ -45,7 +46,7 @@ p {
 
 /* Sections */
 .colored-section {
-  background-color: var(--blue);
+  background-color: var(--primary-color);
   color: #fff;
 }
 
@@ -69,16 +70,22 @@ p {
   padding: 0 18px;
 }
 
-.nav-link {
+.nav-link,
+.nav-link:active {
   font-size: 1.2rem;
   font-family: "Montserrat-Light";
+  color: rgba(255, 255, 255, 0.815) !important;
+}
+
+.nav-link:hover {
+  color: var(--secondary-color) !important;
 }
 /* Navigation Bar */
 
 /* Buttons */
 .big-button {
   margin: 5% 3% 5% 0;
-  background-color: var(--darkblue);
+  background-color: var(--secondary-color);
 }
 /* Buttons */
 
@@ -104,7 +111,7 @@ a:active {
 
 a:hover {
   text-decoration: none;
-  color: #8f8f8f;
+  color: var(--hover-color);
 }
 /* Title Section */
 
@@ -126,7 +133,7 @@ a:hover {
 .scroll-up {
   display: block;
   padding: 10px;
-  background-color: var(--darkblue);
+  background-color: var(--secondary-color);
   color: #fff;
   width: fit-content;
   margin: 0 0 0 auto;
@@ -135,18 +142,18 @@ a:hover {
 
 .scroll-up:hover {
   text-decoration: none;
-  color: #8f8f8f;
+  color: var(--hover-color);
 }
 /* Scroll up */
 
 /* Projects Section */
 #projects-carousel a,
 #projects-carousel a:active {
-  color: white;
+  color: white !important;
 }
 
 #projects-carousel a:hover {
-  color: #8f8f8f;
+  color: var(--hover-color) !important;
 }
 
 .projects-text {
@@ -155,7 +162,7 @@ a:hover {
 }
 
 .projects-text span {
-  color: var(--darkblue);
+  color: var(--primary-color);
 }
 
 .projects-image {
@@ -179,7 +186,7 @@ a:hover {
 
 #contact-links a:hover {
   text-decoration: none;
-  color: #8f8f8f;
+  color: var(--secondary-color);
 }
 /* Contact Section */
 
