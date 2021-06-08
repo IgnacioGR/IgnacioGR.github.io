@@ -142,11 +142,11 @@ a:hover {
 /* Projects Section */
 #projects-carousel a,
 #projects-carousel a:active {
-  color: white;
+  color: white !important;
 }
 
 #projects-carousel a:hover {
-  color: #8f8f8f;
+  color: #8f8f8f !important;
 }
 
 .projects-text {
