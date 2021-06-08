@@ -142,11 +142,11 @@ a:hover {
 /* Projects Section */
 #projects-carousel a,
 #projects-carousel a:active {
-  color: var(--blue);
+  color: white;
 }
 
 #projects-carousel a:hover {
-  color: var(--darkblue);
+  color: #8f8f8f;
 }
 
 .projects-text {
@@ -154,9 +154,13 @@ a:hover {
   line-height: 1.5;
 }
 
+.projects-text span {
+  color: var(--darkblue);
+}
+
 .projects-image {
   width: 50vw;
-  margin: 20px;
+  margin: 20px auto;
   border-radius: 12px;
 }
 
@@ -197,8 +201,8 @@ footer .container-fluid {
   .title-image {
     margin: 5% 0 0 0;
   }
-  
+
   .nav-link {
-    font-size: 2rem;  
+    font-size: 2rem;
   }
 }
