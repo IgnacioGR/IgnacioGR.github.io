@@ -162,9 +162,10 @@ a:hover {
 }
 
 .projects-image {
-  width: 50vw;
+  width: 30vw;
   margin: 20px auto;
   border-radius: 12px;
+  display: block;
 }
 
 .carousel-control-next,
