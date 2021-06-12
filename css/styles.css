@@ -80,6 +80,11 @@ p {
 .nav-link:hover {
   color: var(--hover-color);
 }
+
+.navbar-toggler {
+  position: absolute;
+  right: 0;
+}
 /* Navigation Bar */
 
 /* Buttons */
