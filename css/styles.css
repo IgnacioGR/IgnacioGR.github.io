@@ -1,6 +1,6 @@
 :root {
-  --primary-color: #760000;
-  --secondary-color: #ff6857;
+  --primary-color: #012649;
+  --secondary-color: #006fd6;
   --hover-color: #bebebe;
 }
 
@@ -41,6 +41,7 @@ p {
 
 /* Containers */
 .container-fluid {
+  position: relative;
   padding: 7% 15%;
 }
 
@@ -133,11 +134,14 @@ a:hover {
 /* Scroll up */
 .scroll-up {
   display: block;
+  position: absolute;
+  margin: 0 0 0 auto;
+  right: 0;
+  bottom: 0;
   padding: 10px;
   background-color: var(--primary-color);
   color: #fff;
   width: fit-content;
-  margin: 0 0 0 auto;
   border-radius: 12px 0 0 0;
 }
 
@@ -309,7 +313,6 @@ input:checked + .slider:before {
 @media (min-width: 1300px) {
   .container-fluid {
     height: 100vh;
-    position: relative;
   }
 
   #cta .container-fluid {
@@ -318,13 +321,6 @@ input:checked + .slider:before {
 
   #footer .container-fluid {
     height: 8vh !important;
-  }
-
-  .scroll-up {
-    position: absolute;
-    margin: 0 0 0 auto;
-    right: 0;
-    bottom: 0;
   }
 }
 /* media queries */
