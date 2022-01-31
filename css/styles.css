@@ -8,6 +8,24 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgb(160, 160, 160);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(136, 138, 139);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #0f35589a;
+}
+/* Scrollbar */
+
 body {
   font-family: "Montserrat";
   text-align: center;
@@ -44,6 +62,7 @@ p {
   position: relative;
   padding: 7% 15%;
 }
+/* Containers */
 
 /* Sections */
 .colored-section {
@@ -54,7 +73,7 @@ p {
 .white-section {
   background-color: #fff;
 }
-/* Containers */
+/* Sections */
 
 /* Navigation Bar */
 .navbar {
@@ -131,7 +150,7 @@ a:hover {
 }
 /* Features Section */
 
-/* Scroll up */
+/* Go to top  button*/
 .scroll-up {
   display: block;
   position: absolute;
@@ -149,7 +168,7 @@ a:hover {
   text-decoration: none;
   color: var(--hover-color);
 }
-/* Scroll up */
+/* Go to top button */
 
 /* Projects Section */
 #projects-carousel a,
@@ -181,9 +200,14 @@ a:hover {
 .carousel-control-prev {
   filter: invert(100%);
 }
+
 /* Projects Section */
 
 /* Contact Section */
+#contact-links {
+  margin-top: 10%;
+}
+
 #contact-links a,
 #contact-links a:active {
   color: #fff;
