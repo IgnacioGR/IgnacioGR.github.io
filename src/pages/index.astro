@@ -1,67 +1,262 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-  <!-- Subtle radial glow -->
-  <div
-    class="fixed inset-0 pointer-events-none"
-    style="background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(59,130,246,0.07), transparent)"
-  />
+	<!-- Animated grain texture -->
+	<div id='grain' aria-hidden='true'></div>
 
-  <div class="relative min-h-screen flex flex-col">
-    <main class="flex-1 flex items-center justify-center px-6 py-20">
-      <div class="flex flex-col items-center text-center">
-        <p class="text-zinc-500 text-xs font-semibold tracking-[0.2em] uppercase mb-6">
-          Software Engineer
-        </p>
+	<!-- Subtle radial glow -->
+	<div
+		aria-hidden='true'
+		class='fixed inset-0 pointer-events-none'
+		style='background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(59,130,246,0.07), transparent)'>
+	</div>
 
-        <h1
-          class="text-6xl sm:text-7xl font-black text-zinc-50 mb-6 leading-[1.05] tracking-tight"
-        >
-          Ignacio<br />Gil Roca
-        </h1>
+	<div class='relative min-h-screen flex flex-col'>
+		<main class='flex-1 flex items-center justify-center px-6 py-20'>
+			<div id='content' class='flex flex-col items-center text-center'>
+				<p
+					id='subtitle'
+					class='text-zinc-500 text-xs font-semibold tracking-[0.2em] uppercase mb-6'>
+					SOFTWARE ENGINEER
+				</p>
 
-        <p class="text-zinc-400 text-base leading-relaxed mb-10">
-          Building things for the web.
-        </p>
+				<h1
+					class='text-6xl sm:text-7xl font-black text-zinc-50 mb-6 leading-[1.05] tracking-tight'>
+					<span id='name-1'>Ignacio</span><br />
+					<span id='name-2'>Gil Roca</span>
+				</h1>
 
-        <div class="flex flex-wrap gap-3 justify-center">
-          <a
-            href="https://github.com/IgnacioGR"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 hover:border-zinc-600 text-zinc-100 text-sm font-medium transition-all duration-150"
-          >
-            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
-              <path
-                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
-              />
-            </svg>
-            GitHub
-          </a>
+				<p class='text-zinc-400 text-base leading-relaxed mb-10'>
+					Building things for the web.
+				</p>
 
-          <a
-            href="https://www.linkedin.com/in/ignagilroca/"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="inline-flex items-center gap-2.5 px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium transition-all duration-150"
-          >
-            <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16" aria-hidden="true">
-              <path
-                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
-              />
-            </svg>
-            LinkedIn
-          </a>
-        </div>
-      </div>
-    </main>
+				<div class='flex flex-wrap gap-3 justify-center'>
+					<a
+						href='https://github.com/IgnacioGR'
+						target='_blank'
+						rel='noopener noreferrer'
+						class='magnetic inline-flex items-center gap-2.5 px-5 py-2.5 rounded-lg bg-zinc-800 hover:bg-zinc-700 border border-zinc-700 hover:border-zinc-600 text-zinc-100 text-sm font-medium'>
+						<svg
+							viewBox='0 0 24 24'
+							fill='currentColor'
+							width='16'
+							height='16'
+							aria-hidden='true'>
+							<path
+								d='M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z'
+							></path>
+						</svg>
+						GitHub
+					</a>
 
-    <footer class="py-6 px-6 text-center">
-      <p class="text-zinc-700 text-xs">
-        &copy; {new Date().getFullYear()} Ignacio Gil Roca
-      </p>
-    </footer>
-  </div>
+					<a
+						href='https://www.linkedin.com/in/ignagilroca/'
+						target='_blank'
+						rel='noopener noreferrer'
+						class='magnetic inline-flex items-center gap-2.5 px-5 py-2.5 rounded-lg bg-blue-600 hover:bg-blue-500 text-white text-sm font-medium'>
+						<svg
+							viewBox='0 0 24 24'
+							fill='currentColor'
+							width='16'
+							height='16'
+							aria-hidden='true'>
+							<path
+								d='M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z'
+							></path>
+						</svg>
+						LinkedIn
+					</a>
+				</div>
+			</div>
+		</main>
+
+		<footer class='py-6 px-6 text-center'>
+			<p class='text-zinc-700 text-xs'>
+				&copy; {new Date().getFullYear()} Ignacio Gil Roca
+			</p>
+		</footer>
+	</div>
 </Layout>
+
+<style>
+	/* ── Grain texture ── */
+	@keyframes grain {
+		0%,
+		100% {
+			transform: translate(0, 0);
+		}
+		10% {
+			transform: translate(-5%, -10%);
+		}
+		20% {
+			transform: translate(-15%, 5%);
+		}
+		30% {
+			transform: translate(7%, -25%);
+		}
+		40% {
+			transform: translate(-5%, 25%);
+		}
+		50% {
+			transform: translate(-15%, 10%);
+		}
+		60% {
+			transform: translate(15%, 0);
+		}
+		70% {
+			transform: translate(0, 15%);
+		}
+		80% {
+			transform: translate(3%, 35%);
+		}
+		90% {
+			transform: translate(-10%, 10%);
+		}
+	}
+
+	#grain {
+		position: fixed;
+		top: -50%;
+		left: -50%;
+		width: 200%;
+		height: 200%;
+		pointer-events: none;
+		z-index: 50;
+		opacity: 0.04;
+		animation: grain 8s steps(10) infinite;
+		background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 512 512' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noise)'/%3E%3C%2Fsvg%3E");
+	}
+
+	/* ── Tilt & magnetic transitions ── */
+	#content {
+		transition: transform 0.08s ease-out;
+		will-change: transform;
+	}
+
+	.magnetic {
+		transition:
+			transform 0.15s ease-out,
+			background-color 0.15s,
+			border-color 0.15s;
+	}
+
+	@media (prefers-reduced-motion: reduce) {
+		#grain {
+			animation: none;
+		}
+		#content {
+			transition: none;
+		}
+		.magnetic {
+			transition:
+				background-color 0.15s,
+				border-color 0.15s;
+		}
+	}
+</style>
+
+<script>
+	const reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+	// ── Character scramble on load ──────────────────────────────────────────
+	const CHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%&*";
+
+	function scramble(el: HTMLElement, finalText: string, delay = 0) {
+		if (reduced) return;
+		const FRAMES = 45;
+		let frame = 0;
+		setTimeout(() => {
+			const tick = () => {
+				const revealed = Math.floor((frame / FRAMES) * finalText.length);
+				el.textContent = finalText
+					.split("")
+					.map((char, i) => {
+						if (char === " ") return " ";
+						if (i < revealed) return char;
+						return CHARS[Math.floor(Math.random() * CHARS.length)];
+					})
+					.join("");
+				frame++;
+				if (frame <= FRAMES) requestAnimationFrame(tick);
+				else el.textContent = finalText;
+			};
+			requestAnimationFrame(tick);
+		}, delay);
+	}
+
+	const name1 = document.getElementById("name-1");
+	const name2 = document.getElementById("name-2");
+	if (name1) scramble(name1, "Ignacio", 100);
+	if (name2) scramble(name2, "Gil Roca", 380);
+
+	// ── Typewriter cycling subtitle ────────────────────────────────────────
+	const ROLES = [
+		"WEB DEVELOPER",
+		"FULL STACK DEV",
+		"SOFTWARE ENGINEER",
+		"PROBLEM SOLVER",
+	];
+	const subtitle = document.getElementById("subtitle");
+
+	if (subtitle) {
+		const el = subtitle;
+		const sleep = (ms: number) => new Promise<void>((r) => setTimeout(r, ms));
+		let idx = 0;
+
+		async function typeLoop() {
+			await sleep(1800); // wait for scramble to finish
+			while (true) {
+				const role = ROLES[idx % ROLES.length];
+				for (let i = 0; i <= role.length; i++) {
+					el.textContent = role.slice(0, i) + (i < role.length ? "_" : "");
+					await sleep(65);
+				}
+				await sleep(1800);
+				for (let i = role.length; i >= 0; i--) {
+					el.textContent = role.slice(0, i) + "_";
+					await sleep(35);
+				}
+				await sleep(300);
+				idx++;
+			}
+		}
+
+		typeLoop();
+	}
+
+	// ── Mouse-reactive tilt ─────────────────────────────────────────────────
+	const content = document.getElementById("content");
+
+	if (content && !reduced) {
+		const MAX_TILT = 5;
+
+		document.addEventListener("mousemove", (e) => {
+			const dx = (e.clientX / window.innerWidth - 0.5) * 2; // -1 to 1
+			const dy = (e.clientY / window.innerHeight - 0.5) * 2; // -1 to 1
+			content.style.transform = `perspective(900px) rotateX(${-dy * MAX_TILT}deg) rotateY(${dx * MAX_TILT}deg)`;
+		});
+
+		document.addEventListener("mouseleave", () => {
+			content.style.transform =
+				"perspective(900px) rotateX(0deg) rotateY(0deg)";
+		});
+	}
+
+	// ── Magnetic buttons ────────────────────────────────────────────────────
+	if (!reduced) {
+		document.querySelectorAll<HTMLElement>(".magnetic").forEach((btn) => {
+			btn.addEventListener("mousemove", (e) => {
+				const r = btn.getBoundingClientRect();
+				const dx = (e.clientX - (r.left + r.width / 2)) * 0.12;
+				const dy = (e.clientY - (r.top + r.height / 2)) * 0.12;
+				btn.style.transform = `translate(${dx}px, ${dy}px)`;
+			});
+
+			btn.addEventListener("mouseleave", () => {
+				btn.style.transform = "translate(0, 0)";
+			});
+		});
+	}
+</script>
